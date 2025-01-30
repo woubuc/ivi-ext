@@ -1,0 +1,48 @@
+{
+	"name": "ivi-ext",
+	"version": "0.1.0",
+	"description": "Simple extensions and utilities for ivi, the lightweight declarative web UI library.",
+	"keywords": ["ivi", "state", "router"],
+	"license": "MIT",
+	"homepage": "https://github.com/woubuc/ivi-ext#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/woubuc/ivi-ext.git"
+	},
+	"bugs": {
+		"email": "npm@woubuc.be",
+		"url": "https://github.com/woubuc/ivi-ext/issues"
+	},
+	"author": {
+		"name": "@woubuc",
+		"url": "https://www.woubuc.be"
+	},
+	"sideEffects": false,
+	"files": ["./dist"],
+	"exports": {
+		"./state": {
+			"require": "./dist/state.cjs",
+			"import": "./dist/state.js",
+			"types": "./dist/state.d.ts"
+		},
+		"./router": {
+			"require": "./dist/router.cjs",
+			"import": "./dist/router.js",
+			"types": "./dist/router.d.ts"
+		}
+	},
+	"scripts": {
+		"test": "bun test",
+		"prebuild": "bun test",
+		"build": "bun build.ts",
+		"prepublishOnly": "bun run build"
+	},
+	"devDependencies": {
+		"@types/bun": "latest",
+		"bun-plugin-dts": "^0.3.0",
+		"typescript": "^5.0.0"
+	},
+	"peerDependencies": {
+		"ivi": "^4.0.0"
+	}
+}
