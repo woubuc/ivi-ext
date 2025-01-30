@@ -1,6 +1,7 @@
 # ivi extensions
-Some of my utilities and helpers for use
-with [ivi](https://github.com/localvoid/ivi).
+Utilities and helpers for use with [ivi](https://github.com/localvoid/ivi).
+
+[![NPM Version](https://img.shields.io/npm/v/ivi-ext?style=flat-square)](https://www.npmjs.com/package/ivi-ext)
 
 ## State
 Wraps [`useState`](https://github.com/localvoid/ivi?tab=readme-ov-file#usestate)
