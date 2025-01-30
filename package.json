@@ -1,6 +1,6 @@
 {
 	"name": "ivi-ext",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Simple extensions and utilities for ivi, the lightweight declarative web UI library.",
 	"keywords": ["ivi", "state", "router"],
 	"license": "MIT",
@@ -18,7 +18,7 @@
 		"url": "https://www.woubuc.be"
 	},
 	"sideEffects": false,
-	"files": ["./dist"],
+	"files": ["dist/**/*"],
 	"exports": {
 		"./state": {
 			"require": "./dist/state.cjs",
